@@ -10,9 +10,11 @@
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Karla|Roboto+Slab&display=swap" rel="stylesheet">
 
 
   <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/8b9c41d060.js"></script>
 
   <!-- Bootstrap Scripts -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -25,46 +27,47 @@
 
   <section id="title" class="">
 
+
+
+    <!-- Nav Bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">NoRush</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">How it works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Partners</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Support</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" href="#" class="btn btn-outline-light btn-sm nav-btn">Login</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Title Section -->
     <div class="container-fluid">
-
-      <!-- Nav Bar -->
-
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">NoRush</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">How it works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Partners</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Support</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <!-- Title Section -->
 
       <div class="row">
 
-        <div class="col-lg-6">
+        <div class="col-lg-6 title-div">
           <h1 class="big-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
           <button type="button" class="btn btn-dark btn-lg download-btn">Play Video</button>
-          <button type="button" class="btn btn-outline-light btn-lg download-btn">Get Started</button>
+          <button type="button" class="btn btn-dark btn-lg download-btn">Get Started</button>
         </div>
 
         <div class="col-lg-6 img-div">
-          <img class="title-img" src="" alt="">
+          <img class="title-img" src="Images\app-showcase.png" alt="">
         </div>
 
       </div>
@@ -80,21 +83,58 @@
 
     <div class="container-fluid">
 
+      <h2 class="section-heading">How it works</h2>
+
       <div class="row">
 
         <div class="col-lg-4 hiw-box">
-          <h1>test</h1>
+          <h3 class="hiw-title">Driving?</h3>
+
+          <ol class="hiw-list">
+            <li class="hiw-item" data-target="#hiw-carousel" data-slide-to="0">Cras justo odio</li>
+            <li class="hiw-item" data-target="#hiw-carousel" data-slide-to="1">Dapibus ac facilisis in</li>
+            <li class="hiw-item" data-target="#hiw-carousel" data-slide-to="2">Morbi leo risus</li>
+            <li class="hiw-item" data-target="#hiw-carousel" data-slide-to="3">Porta ac consectetur ac</li>
+            <li class="hiw-item" data-target="#hiw-carousel" data-slide-to="4">Vestibulum at eros</li>
+          </ol>
+        </div>
+
+        <div class="col-lg-4 hiw-box hiw-bg">
+
+          <img class="carousel-phone" src="Images\app-showcase.png" alt="">
+
+          <div id="hiw-carousel" class="carousel slide carousel-fade" data-ride="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="hiw-img" src="Images\interface-screenshot0-1.jpg" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="hiw-img" src="Images\interface-screenshot1.jpg" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="hiw-img" src="Images\interface-screenshot2.jpg" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="hiw-img" src="Images\interface-screenshot3.jpg" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="hiw-img" src="Images\interface-screenshot1.jpg" alt="">
+              </div>
+            </div>
+          </div>
 
         </div>
 
         <div class="col-lg-4 hiw-box">
+          <h3 class="hiw-title">Need a Ride?</h3>
 
-
-        </div>
-
-        <div class="col-lg-4 hiw-box">
-
-
+          <ol class="hiw-list">
+            <li class="hiw-item" data-target="#hiw-carousel" data-slide-to="0">Cras justo odio</li>
+            <li class="hiw-item" data-target="#hiw-carousel" data-slide-to="1">Dapibus ac facilisis in</li>
+            <li class="hiw-item" data-target="#hiw-carousel" data-slide-to="2">Morbi leo risus</li>
+            <li class="hiw-item" data-target="#hiw-carousel" data-slide-to="3">Porta ac consectetur ac</li>
+            <li class="hiw-item" data-target="#hiw-carousel" data-slide-to="4">Vestibulum at eros</li>
+          </ol>
         </div>
 
       </div>
@@ -109,27 +149,45 @@
 
     <div class="container-fluid">
 
+      <h2 class="section-heading">What you should know <br> before your first NoRush ride</h2>
+
       <div class="row">
 
-        <div class="col-lg-6 wysk-box">
-
-
+        <div class="col-lg-4 wysk-box">
+          <i class="fas fa-bullseye fa-4x icon"></i>
+          <h3 class="wysk-title">Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu sem rutrum, sollicitudin lectus sit amet, imperdiet erat.</p>
         </div>
 
-        <div class="col-lg-6 wysk-box">
-
-
+        <div class="col-lg-4 wysk-box">
+          <i class="fas fa-bullseye fa-4x icon"></i>
+          <h3 class="wysk-title">Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu sem rutrum, sollicitudin lectus sit amet, imperdiet erat.</p>
         </div>
 
-        <div class="col-lg-6 wysk-box">
-
-
+        <div class="col-lg-4 wysk-box">
+          <i class="fas fa-bullseye fa-4x icon"></i>
+          <h3 class="wysk-title">Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu sem rutrum, sollicitudin lectus sit amet, imperdiet erat.</p>
         </div>
 
 
-        <div class="col-lg-6 wysk-box">
+        <div class="col-lg-4 wysk-box">
+          <i class="fas fa-bullseye fa-4x icon"></i>
+          <h3 class="wysk-title">Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu sem rutrum, sollicitudin lectus sit amet, imperdiet erat.</p>
+        </div>
 
+        <div class="col-lg-4 wysk-box">
+          <i class="fas fa-bullseye fa-4x icon"></i>
+          <h3 class="wysk-title">Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu sem rutrum, sollicitudin lectus sit amet, imperdiet erat.</p>
+        </div>
 
+        <div class="col-lg-4 wysk-box">
+          <i class="fas fa-bullseye fa-4x icon"></i>
+          <h3 class="wysk-title">Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu sem rutrum, sollicitudin lectus sit amet, imperdiet erat.</p>
         </div>
 
       </div>
@@ -143,12 +201,21 @@
   <section id="download">
 
     <div class="container-fluid">
+
       <h3 class="big-heading">Download now!</h3>
 
-      <button type="button" class="btn btn-dark btn-lg download-btn">AppleStore</button>
-      <button type="button" class="btn btn-outline-light btn-lg download-btn">GooglePlay</button>
+      <div class="row">
+        <div class="col-md-6 qr-div">
+          <img class="qr-code" src="Images\qr-code.png" alt="">
+        </div>
+        <div class="col-md-6 badges-div">
+          <a href="#"><img class="badges" src="Images\app-store-badge.svg" alt="Google Play Badge"></a><br>
+          <a href="#"><img class="badges" src="Images\google-play-badge.svg" alt="Google Play Badge"></a>
+        </div>
+      </div>
 
-      <h3 class="big-heading">Use the WebApp here!</h3>
+
+      <h1 class="big-heading">or use the WebApp here!</h3>
 
     </div>
 
@@ -157,13 +224,26 @@
 
   <!-- Footer Section -->
 
-  <footer id="footer" class="white-section">
-
+  <footer id="footer">
     <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <a class="brand" href="#">NoRush</a>
+        </div>
+        <div class="col-md-6">
 
+        </div>
+      </div>
 
     </div>
+
   </footer>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 1000
+    });
+  </script>
 
 </body>
 
